@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    
+} 
+main {
+    flex: 1 0 auto;
+}
+
+/*Blog posts*/
+
+.To Do List-post {
+    margin-bottom: 60px;
+}
+
+.To Do List-post-title {
+       margin-bottom:40px;
+}To Do List-post-meta {
+       margin-bottom: 20px;
+       color: #777;
+       font-style:italic;
+}
