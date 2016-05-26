@@ -7,17 +7,338 @@ body {
 main {
     flex: 1 0 auto;
 }
+/* Color Scheme
+ * #1CA8DD
+ * #434857
+ * #1BC98E
+ * #1CA8DD
+ * #E64759
+ * #9F86FF
+ * #E4D836
+ */
 
-/*Blog posts*/
-
-.To Do List-post {
-    margin-bottom: 60px;
+body {
+  background-color: #434857 !important;
+  font-family: 'Raleway', sans-serif !important;
+}
+button:hover {
+  background-color: #1CA8DD !important;
+  color: #434857 !important;
+}
+input,
+textarea {
+  border-color: #1CA8DD !important;
+  background-color: #434857 !important;
+  color: #ddd !important;
+}
+span {
+  background-color: #1BC98E !important;
+  border-color: #1BC98E !important;
+  color: #252830 !important;
+}
+h4,
+h1 {
+  font-family: 'Raleway', sans-serif !important;
+  color: #1BC98E !important;
+}
+p {
+  color: #ddd !important;
 }
 
-.To Do List-post-title {
-       margin-bottom:40px;
-}To Do List-post-meta {
-       margin-bottom: 20px;
-       color: #777;
-       font-style:italic;
+
+.fBase-ico {
+  margin: 0 auto;
+}
+.fBase-ico i {
+  margin-right: 5px;
+}
+.fBase-ico p {
+  margin-bottom: 5px;
+  font-weight: 200;
+  color: #1CA8DD !important;
+}
+
+
+
+.wrapper {
+  margin: 0 auto;
+  margin-top: 100px;
+  padding-top: 5px;
+  border: 3px solid #1BC98E;
+  border-radius: 3px;
+  width: 300px;
+  background-color: #252830;
+  text-align: center;
+}
+input,
+span {
+  margin-top: 16px !important;
+}
+li {
+  text-align: left;
+  list-style-type: none;
+  font-size: 13px;
+}
+button {
+  background-color: #252830 !important;
+  color: #1CA8DD !important;
+  border: 1px solid !important;
+  border-color: #1CA8DD !important;
+  margin-bottom: 10px;
+  border-radius: 4px !important;
+}
+
+
+.title-wrapper {
+  margin: 0 auto;
+  margin-top: 200px;
+  width: 600px;
+  text-align: center;
+}
+.title-wrapper h1 {
+  font-size: 100px !important;
+  font-weight: 200;
+  border: 3px solid #1BC98E;
+  border-radius: 6px;
+  margin-bottom: 30px;
+  background-color: #252830;
+}
+#enter-btn {
+  border: 0px !important;
+}
+
+
+body {
+  font-family: arial;
+  padding: 3em;
+}
+
+/* Draw border */
+
+.drawbox {
+  position:relative;
+  float:right;
+  width:1140px;
+  height:600px;
+  background-color:#2F4F4F;
+  padding:25px;
+  
+  /*
+ -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  -o-transform: rotate(2deg);*/
+}
+
+.draw:after {
+  border: 1em solid transparent;
+  border-image: url('http://emptyeasel.com/wp-content/uploads/2012/11/creatingtexture2-carrielewis.jpg') 0 27 27 27 round stretch;
+  
+  /*border-radius: 0.25em 0.10em 0.5em 0.25em;*/
+  transform: rotate(deg);
+  content: '';
+  top:0px;
+  left:0px;
+  position:absolute;
+  width:100%;
+  height:100%;
+  
+}
+.draw:before {
+  border-top: 0.1em solid transparent;
+  border-image: url('http://emptyeasel.com/wp-content/uploads/2012/11/creatingtexture2-carrielewis.jpg') 27 0 0 0 stretch round;
+  /*border-radius: 1.5em;*/
+  content: '';
+  height: 3em;
+  left: 0;
+  top: 0;
+  transform: rotate(-1deg);
+  width:1%;
+  position:absolute;
+}
+
+
+
+
+
+#nickform {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  border: 1px solid black;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+}
+
+#container {
+  position: absolute;
+  display: table;
+  margin: auto;
+  top: calc(50% - 25px);
+  left: calc(50% - 75px);
+}
+
+#container p {
+  display: table-row;
+}
+
+#container p + #username {
+  margin: 10px;
+}
+
+#username {
+  display: table-row;
+  width: 150px;
+  outline: 0;
+  border: 1px transparent;
+  border-bottom: 1px solid black;
+  font-size: 20px;
+  text-align: center;
+  height: 20px;
+}
+
+#messages {
+  position: absolute;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  height: calc(100% - 90px);
+  width: 98.5%;
+  border: 1px solid black;
+  display: none;
+  word-wrap: break-word;
+}
+
+#form {
+  display: none;
+}
+
+#submit {
+  line-height: 100%;
+  width: 98.1%;
+  border: 4px solid black;
+  font-size: 35px;
+  bottom: 0;
+  height: 50px;
+  outline: 0;
+  position: absolute;
+  left: .6%;
+  resize: none;
+  font-family: Arial;
+}
+
+.chatmessage {
+  font-size: 17px;
+  display: inline;
+}
+
+#number {
+  position: absolute;
+  border-right: 1px solid black;
+  width: 100px;
+  height: 20px;
+  display: none;
+}
+
+#number p {
+  text-align: center;
+  margin-top: 1px;
+  padding-right: 1px;
+  color: grey;
+  font-family: sans-serif;
+}
+
+#outline {
+  width: 99.8%;
+  height: 20px;
+  border: 1px solid black;
+  border-bottom: 0;
+  display: none;
+}
+
+br {
+  display: block;
+  margin: 1px 0;
+  line-height: 2.2px;
+  content: " ";
+}
+
+.user {
+  font-size: 15px;
+  color: grey;
+  display: inline;
+}
+
+.into {
+  font-size: 12px;
+  color: grey;
+  text-align: center;
+}
+
+
+// manga and comics code //
+
+
+body { background: #333; }
+.hovercontent h1 {
+  color: white;
+  font-size: 1.3em;
+  margin-top: 10%;
+}
+.hovercontent h3 {
+  color: #a1a1a1;
+  font-weight: 70%;
+}
+
+.grid {
+  width: 100%;
+  margin: 80px 0 0;
+  font-size: 0;
+  text-align: center;
+}
+
+.hoveritem {
+  max-width: 100%;
+  font-size: 19px;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+.hoveritem img {
+  max-width: 100%;
+}
+.hoveritem .link {
+  display: block;
+  height: 100%;
+}
+.hovercontent {
+  position: absolute;
+  font-family: "Helvetica", Arial, sans-serif;
+  text-align: center;
+  width: 100%;
+  height: 98.1%;
+  background: rgba(0,0,0,0.7);
+
+  opacity: 0;
+  line-height: 40px;
+  filter: alpha(opacity=0);
+  -moz-transform: scale3d(1.3, 1.3, 1) translate3d(0, 10%, 0);
+  -o-transform: scale3d(1.3, 1.3, 1) translate3d(0, 10%, 0);
+  -webkit-transform: scale3d(1.3, 1.3, 1) translate3d(0, 10%, 0);
+  transform: scale3d(1.3, 1.3, 1) translate3d(0,10%,0);
+  
+  -webkit-transition: opacity 0.2s ease-out, -webkit-transform 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out, -moz-transform 0.2s ease-out;
+  -o-transition: opacity 0.2s ease-out, -o-transform 0.2s ease-out;
+  transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+}
+
+.hoveritem .link:hover {
+}
+.hoveritem .link:hover .hovercontent {
+  opacity: 1;
+  -moz-transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+  -o-transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+  -webkit-transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+  transform: scale3d(1, 1, 1) translate3d(0,0,0);
 }
