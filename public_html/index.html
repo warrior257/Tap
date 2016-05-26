@@ -4,7 +4,7 @@
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-      <link type="text/css" rel="stylesheet" href="css/To Do List.css">
+      <link type="text/css" rel="stylesheet" href="css/Tap.css">
       <link rel="icon" href="data:;base64,iVBORwOKGgo=">
      
    </body>
@@ -12,9 +12,9 @@
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
-
-    <body>
+    
         <header>
+           
             <nav>
                 <div class="nav-wrapper green">
                     <a href="#" class="brand-logo">www.TAP.com</a>
@@ -23,7 +23,7 @@
                        <li><a href="chat.html">chat</a></li>
                        <li><a href="manga.html">manga</a></li>
                        <li><a href="comics.html">comics</a></li>
-                        <li><a href="recomendations.html">recomendations</a></li>
+                        <li><a href="recommendations.html">recommendations</a></li>
                     </ul>
                 </div>
             </nav>
@@ -100,6 +100,28 @@
     </a>
   </div>
 </div>
+    <div>
+<div class="drawbox draw">
+    <h1 class="left-align">Store recommendations</h1>  <h1 class="right-align">App recommendations</h1>
+     <p class="right-align">
+         Zing Box <img src="image/zingbox-manga.png" alt="Flower" width="80" height="60">
+     </p>
+     <p class="left-align">Comic Factory : E Colorado blvd, Pasadena CA 91106</p> 
+     <p class="right-align">
+         Web Toons <img src="image/2015-08-21_103813.png" alt="Flower" width="80" height="60">
+     </p>
+      <p class="left-align">Anime Jungle : 319 E 2nd street #103, Los Angeles, CA 90012</p> 
+     <p class="right-align">
+        Crunchyroll Manga <img src="image/unnamed.png" alt="Flower" width="80" height="60">
+     </p>
+       <p class="left-align">Vromans Bookstore : 695 E Colorado Blvd, Pasadena, CA 91101</p> 
+     <p class="right-align">
+        Comics <img src="image/unnamed (1).png" alt="Flower" width="80" height="60">
+     </p>
+       <p class="left-align">Collectors Paradise :  319 S Arroyo Pkwy #4, Pasadena, CA 91105</p> 
+ <div>
+   
+    </div>
 
 </body>
 </html>
@@ -118,7 +140,7 @@
             </div>
             <div class="footer-copyright">
                 <div class="container">
-                    Totally,Awesome,Procrastination @201X sam and max
+                    Totally,Awesome,Procrastination @201X samax
                 </div>
             </div>
         </footer>
@@ -126,15 +148,15 @@
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="libs/backendless.js"></script>
-      <script type="text/javascript" src="js/To Do List.js"></script>
+      <script type="text/javascript" src="js/Tap.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
       <script text="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment.min.jscopy"></script>
       <script type="text/javascript" src="js/handlebars-v4.0.5.js"></script>
     <script id="blogs-template" type="text/x-handlebars-template">
       {{#each posts}}
-      <div class="Blog-post">
-          <h2 class="blog-post-title">{{title}}</h2>
-          <p class="blog-post-meta">At {{format created}} by {{authorEmail}}</p>
+      <div class="Tap-post">
+          <h2 class="Tap-post-title">{{title}}</h2>
+          <p class="Tap-post-meta">At {{format created}} by {{authorEmail}}</p>
              <div> {{content}} </div>
           </div>
      {{/each}}
